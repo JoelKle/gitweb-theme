@@ -116,7 +116,12 @@ td, th {
 .page_nav br {
   display: none;
 }
-.page_nav > a, td.link > a {
+select {
+   -moz-appearance: menulist-button !important;
+  -webkit-appearance: menulist-button !important;
+  appearance: menulist-button !important;
+}
+.page_nav > a, td.link > a, div.log_link > a, select{
   font-size: 12px !important;
   line-height: 20px !important;
   padding: 3px 10px !important;
@@ -145,7 +150,7 @@ td, th {
   vertical-align: middle;
   white-space: nowrap;
 }
-.page_nav > a:hover, td.link > a:hover {
+.page_nav > a:hover, td.link > a:hover, div.log_link > a:hover, select:hover {
   background-color: #e6ebf1;
   background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
   background-position: -.5em;
@@ -153,14 +158,14 @@ td, th {
   background-repeat: repeat-x;
   text-decoration: none;
 }
-.page_nav > a:active, td.link > a:active {
+.page_nav > a:active, td.link > a:active, div.log_link > a:active, select:active {
   background-color: #e9ecef;
   background-image: none;
   border-color: rgba(27,31,35,.35);
   box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,.15);
   outline-width: 0;
 }
-.page_nav > a:focus, td.link > a:focus {
+.page_nav > a:focus, td.link > a:focus, div.log_link > a:focus, select:focus {
   box-shadow: 0 0 0 0.2em rgba(3,102,214,.3);
   outline: 0;
 }
