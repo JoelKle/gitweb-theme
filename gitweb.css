@@ -310,6 +310,14 @@ a.rss_logo:hover {
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 
+.project_list {
+  border: unset;
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  margin-top: 30px;
+}
+
 .project_list th,
 .shortlog th,
 .tree th,
@@ -345,6 +353,24 @@ a.rss_logo:hover {
   background: -o-linear-gradient(top, #F9F9F9 0%, #EFEFEF 100%);
   height: 2.5em;
   border-bottom: 1px solid #e1e1e1;
+}
+
+.project_list tr.dark, .project_list tr.light ,.project_list tr {
+  background: unset;
+}
+
+.project_list th {
+  padding: 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.project_list td {
+  padding: 15px 0 15px 0;
+}
+
+.project_list td:first-of-type {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 th .header {
